@@ -1,0 +1,190 @@
+
+#betplay{height:32px; 
+	margin-right:8px;
+}
+.card-video {
+	background: linear-gradient(135deg, #1f2029 0%, #37abf8 100%);
+	box-shadow: 0 0 32px 0 #37abf8cc, 0 2px 12px #1f2029cc;
+	border: 2px solid #37abf8;
+	color: #fff;
+}
+.card-video h4 {
+	color: #fff;
+	text-shadow: 0 2px 8px #37abf8cc;
+}
+
+.card-bienvenida,
+.card-historia,
+.card-quees,
+.card-importancia {
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-bienvenida:hover {
+	transform: scale(1.04);
+	box-shadow: 0 0 40px 0 #f8ab37cc, 0 4px 16px #fffbe6ee;
+}
+.card-historia:hover {
+	transform: scale(1.04);
+	box-shadow: 0 0 40px 0 #37abf8cc, 0 4px 16px #e6f7ffee;
+}
+.card-quees:hover {
+	transform: scale(1.04);
+	box-shadow: 0 0 40px 0 #ab37f8cc, 0 4px 16px #f3e6ffee;
+}
+.card-importancia:hover {
+	transform: scale(1.04);
+	box-shadow: 0 0 40px 0 #37f8abcc, 0 4px 16px #e6fff3ee;
+}
+.card-bienvenida {
+	background: linear-gradient(135deg, #f8ab37 0%, #fffbe6 100%);
+	box-shadow: 0 0 24px 0 #f8ab3788, 0 2px 8px #fffbe6cc;
+	border: 2px solid #f8ab37;
+}
+
+.card-historia {
+	background: linear-gradient(135deg, #37abf8 0%, #e6f7ff 100%);
+	box-shadow: 0 0 24px 0 #37abf888, 0 2px 8px #e6f7ffcc;
+	border: 2px solid #37abf8;
+}
+
+.card-quees {
+	background: linear-gradient(135deg, #ab37f8 0%, #f3e6ff 100%);
+	box-shadow: 0 0 24px 0 #ab37f888, 0 2px 8px #f3e6ffcc;
+	border: 2px solid #ab37f8;
+}
+
+.card-importancia {
+	background: linear-gradient(135deg, #37f8ab 0%, #e6fff3 100%);
+	box-shadow: 0 0 24px 0 #37f8ab88, 0 2px 8px #e6fff3cc;
+	border: 2px solid #37f8ab;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+	--white: #fff;
+	--dark: #0f1724;
+	--yellow: #f8ab37;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+	background: #0f1724;
+	color: var(--white);
+	margin: 0;
+	overflow-x: hidden;
+}
+
+.section {
+	position: relative;
+}
+
+.full-height {
+	height: 80vh;
+}
+
+.over-hide {
+	overflow: hidden;
+}
+
+.img-wrap {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 10px 30px rgba(255, 255, 255, 0.5);
+}
+
+.img-wrap img {
+	width: 100%;
+	display: block;
+}
+
+.hero-center-section {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-60%);
+	opacity: 0;
+	transition: all .4s;
+}
+
+.hero-center-section.show {
+	transform: translateY(-50%);
+	opacity: 1;
+}
+
+.hero-left-section {
+	position: absolute;
+	left: 24px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.slide-buttons {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.slide-buttons li {
+		width: 56px;
+		height: 56px;
+		background-size: cover;
+		background-position: center;
+		border-radius: 6px;
+		margin: 12px 0;
+		cursor: pointer;
+		background-color:rgb(2, 2, 38);
+		border: 2px solid var(--white);
+}
+
+.slide-buttons li:nth-child(1) {
+	background-image: url('imagenes/1.jpg');
+}
+.slide-buttons li:nth-child(2) {
+	background-image: url('imagenes/2.jpg');
+}
+.slide-buttons li:nth-child(3) {
+	background-image: url('imagenes/3.jpg');
+}
+
+.slide-buttons li.active {
+	box-shadow: 0 8px 20px rgba(214, 215, 219, 0.5);
+}
+
+.opacity-60 {
+	opacity: .6;
+}
+
+a {
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.hero-center-section {
+		position: relative;
+		transform: none;
+		opacity: 1;
+		padding: 20px;
+	}
+}
+
+.footer a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+#betplay {
+  height: 32px;
+  margin-right: 8px;
+  vertical-align: middle;
+}

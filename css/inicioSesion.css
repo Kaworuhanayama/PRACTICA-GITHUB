@@ -1,0 +1,165 @@
+body{
+  margin:0;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #1f2029 0%, #37abf8 100%);
+  color: #fff;
+  min-height:100vh;
+}
+
+.login-card{
+  background: linear-gradient(135deg, #283e51 0%, #485563 100%);
+  border: 2px solid #37abf8;
+  box-shadow: 0 0 32px 0 #37abf8cc, 0 2px 12px #1f2029cc;
+  color: #fff;
+  border-radius: 12px;
+  max-width:400px;
+  width:100%;
+}
+
+.form-control{
+  background: rgba(55,171,248,0.08);
+  border:none;
+  color:#fff;
+}
+.form-control::placeholder{
+  color:rgba(255,255,255,0.6);
+}
+.form-control:focus{
+  background: rgba(55,171,248,0.15);
+  outline:none;
+  box-shadow:0 0 0 2px #37abf8;
+}
+
+.btn-primary, .btn-success{
+  border:none;
+  border-radius:8px;
+  transition:transform 0.2s ease;
+}
+.btn-primary:hover, .btn-success:hover{
+  transform:translateY(-2px);
+}
+
+.animated-card{
+  transform:translateY(20px);
+  opacity:0;
+  animation:fadeUp 0.6s forwards;
+}
+@keyframes fadeUp{
+  to{ transform:translateY(0); opacity:1; }
+}
+.footer{
+    background: #0f1724;
+}
+.footer a {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer a:hover {
+  color: #0d6efd;
+  transform: scale(1.2);
+}
+
+#betplay {
+  height: 32px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+body{
+  margin:0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #1f2029 0%, #283e51 50%, #485563 100%);
+  color: #fff;
+  min-height:100vh;
+  padding: 16px;
+}
+.barra-busqueda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.barra-busqueda input {
+  flex: 1;
+  max-width: 500px;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #1a1e24;
+  color: #f0f0f0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.barra-busqueda input:focus {
+  outline: none;
+  background-color: #222831;
+  box-shadow: 0 0 10px #00bcd4;
+}
+
+.barra-busqueda button {
+  background: linear-gradient(90deg, #00bcd4, #0084ff);
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.4rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.barra-busqueda button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00bcd4;
+}
+
+/* ================================
+   TABLA DE RESULTADOS
+================================ */
+.resultados {
+  overflow-x: auto;
+}
+
+.tabl1 {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #14181f;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease;
+}
+
+.tabl1 thead {
+  background-color: #00bcd4;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tabl1 th, .tabl1 td {
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.tabl1 tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease;
+}
+
+.tabl1 tbody tr:hover {
+  background-color: rgba(0, 188, 212, 0.1);
+}
+
+/* ================================
+   ANIMACIONES
+================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
